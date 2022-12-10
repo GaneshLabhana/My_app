@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "name": "Ganesh",
+      "address": "Srikakulam",
+      "email": "ganeshmailno1@gamil.com",
+      "contact": "8179117916",
+      "id": 1
+    },
+    {
+      "name": "Sai Anna",
+      "address": "Guntupalli",
+      "email": "saiannamailno2@gamil.com",
+      "contact": "9874561230",
+      "id": 2
+    },
+    {
+      "name": "Vinay",
+      "address": "Mangalagiri",
+      "email": "vinaymailno3@gamil.com",
+      "contact": "9632587410",
+      "id": 3
+    }
+  ]
+}

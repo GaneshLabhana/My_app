@@ -1,0 +1,67 @@
+{
+  "user": [
+    {
+      "name": "Ganesh ",
+      "address": "Srikakulam",
+      "email": "ganeshmailno1@gamil.com",
+      "contact": "8179117916",
+      "id": 1
+    },
+    {
+      "name": "Sai Anna",
+      "address": "Guntupalli",
+      "email": "saiannamailno2@gamil.com",
+      "contact": "9874561230",
+      "id": 2
+    },
+    {
+      "name": "Ganesh",
+      "address": "Srikakulam",
+      "email": "ganeshmailno1@gamil.com",
+      "contact": "8179117916",
+      "id": 3
+    },
+    {
+      "name": "Sai Anna",
+      "address": "Guntupalli",
+      "email": "saiannamailno2@gamil.com",
+      "contact": "9874561230",
+      "id": 4
+    },
+    {
+      "name": "Ganesh lg",
+      "address": "Srikakulam",
+      "email": "ganeshmailno1@gamil.com",
+      "contact": "8179117916",
+      "id": 5
+    },
+    {
+      "name": "Sai Anna",
+      "address": "Guntupalli",
+      "email": "saiannamailno2@gamil.com",
+      "contact": "9874561230",
+      "id": 6
+    },
+    {
+      "name": "new",
+      "email": "new@gmail.com",
+      "contact": "8985150710",
+      "address": "Guntupalli",
+      "id": 8
+    },
+    {
+      "name": "User",
+      "email": "user@gmail.com",
+      "contact": "8985150710",
+      "address": "Guntupalli",
+      "id": 9
+    },
+    {
+      "name": "Jyothi madam",
+      "email": "g.jyothi@clonetab.com",
+      "contact": "08662356452734",
+      "address": "Kankipadu",
+      "id": 10
+    }
+  ]
+}
