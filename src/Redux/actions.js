@@ -1,5 +1,6 @@
-import * as types from "./actionType";
 import axios from "axios";
+import * as types from "./actionType";
+
 
 const getUsers = (users) => ({
   type: types.GET_USERS,
@@ -24,11 +25,9 @@ const getUser = (user) => ({
 // });
 export const loadUsers = () => {
   return function (dispatch) {
-    console.log(process.env.REACT_APP_API);
     axios
       .get(`${process.env.REACT_APP_API}`)
       .then((res) => {
-        console.log("res", res);
         dispatch(getUsers(res.data));
       })
       .catch((error) => console.log(error));
@@ -36,11 +35,9 @@ export const loadUsers = () => {
 };
 export const deleteUsers = (id) => {
   return function (dispatch) {
-    console.log(process.env.REACT_APP_API);
     axios
       .delete(`${process.env.REACT_APP_API}/${id}`)
       .then((res) => {
-        console.log("res", res);
         dispatch(deletedUsers());
         dispatch(loadUsers());
       })
@@ -48,13 +45,10 @@ export const deleteUsers = (id) => {
   };
 };
 export const addUsers = (User) => {
-  console.log(User);
   return function (dispatch) {
-    console.log(process.env.REACT_APP_API);
     axios
       .post(`${process.env.REACT_APP_API}`, User, {})
       .then((res) => {
-        console.log("res", res);
         dispatch(addedUsers());
         dispatch(loadUsers());
       })
@@ -63,11 +57,9 @@ export const addUsers = (User) => {
 };
 export const getSingleUsers = (id) => {
   return function (dispatch) {
-    console.log(process.env.REACT_APP_API);
     axios
       .get(`${process.env.REACT_APP_API}/${id}`)
       .then((res) => {
-        console.log("res", res);
         dispatch(getUser(res.data));
       })
       .catch((error) => console.log(error));
@@ -75,11 +67,9 @@ export const getSingleUsers = (id) => {
 };
 export const updateUsers = (user, id) => {
   return function (dispatch) {
-    console.log(process.env.REACT_APP_API);
     axios
       .put(`${process.env.REACT_APP_API}/${id}`, user)
       .then((res) => {
-        console.log("res", res);
         dispatch(updatedUsers());
       })
       .catch((error) => console.log(error));

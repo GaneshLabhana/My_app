@@ -14,6 +14,7 @@ import { getSingleUsers } from "../Redux/actions";
 //import { useNavigate } from "react-router-dom";
 
 import { deleteUsers, loadUsers } from "../Redux/actions";
+import Counter from "../components/Counter";
 //import { useState } from "react";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -40,16 +41,19 @@ const Home = () => {
   // const navigate = useNavigate();
   //const [searchTerm, setSearchTerm] = useState("");
   const { users } = useSelector((state) => state);
-  console.log(users);
+ 
   //API Calling
+
   useEffect(() => {
     dispatch(loadUsers());
   }, [dispatch]);
+  
   const handleDelete = (id) => {
     if (window.confirm("Are You Sure Want To Delete The User ? ")) {
       dispatch(deleteUsers(id));
     }
   };
+
   const editClick = (user) => {
     dispatch(getSingleUsers(user.id));
     window.location.replace(`/edituser/${user.id}`);
@@ -86,6 +90,7 @@ const Home = () => {
           >
             Add User
           </Button>
+          <Counter />
         </Box>
       </div>
       <TableContainer component={Paper}>
